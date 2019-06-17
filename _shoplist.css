@@ -1,0 +1,79 @@
+.container{
+    margin:5vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,18vw);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+.container div div:nth-child(1)	{
+    position: relative;
+    height: 17vw;
+    width: 19vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container div div:nth-child(2)	{
+    padding: 2px;
+}
+
+.container div div:nth-child(3)	{
+    padding: 2px;
+}
+
+
+img {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* -------------------rwd------------------- */
+
+@media screen and (max-width: 400px){
+.container{
+    margin:1vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(8,50vw);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3.8rem;
+    margin-bottom: 15vh;
+}
+
+.container div div:nth-child(1)	{
+    position: relative;
+    /* border:1px solid #4240406e; */
+    height: 35vw;
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container div div:nth-child(2)	{
+    font-size: 0.8rem;
+}
+
+.container div div:nth-child(3)	{
+    font-size: 0.8rem;
+}
+
+img {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+}
